@@ -14,4 +14,4 @@ El sistema toma 3 señales de audio monofónicas independientes muestreadas a $4
 
 ## 3. Arquitectura del Sistema
 
-![Etapa de modulación](.png)
+![Etapa de modulación](docs/images/Estructura_Moduladores.png)
