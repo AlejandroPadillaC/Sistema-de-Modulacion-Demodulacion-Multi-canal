@@ -7,7 +7,7 @@ Este repositorio contiene la simulación en MATLAB de un sistema multiplexado po
 
 ## Descripción del Proyecto
 
-El sistema toma 3 señales de audio monofónicas independientes muestreadas a $48\text{ kHz}$, las remuestra a una frecuencia de procesado superior ($288\text{ kHz}$), las modula individualmente en portadoras de $30\text{ kHz}$, $60\text{ kHz}$ y $90\text{ kHz}$, y las combina en una única señal canalizada $m(t)$. En el receptor, mediante etapas de filtrado y demodulación, se recuperan las señales originales de audio para su reproducción a $48\text{ kHz}$.
+El sistema toma 3 señales de audio independientes muestreadas a $48\text{ kHz}$, toma los primeros 10 segundos de cada archivo y las remuestra a una frecuencia de procesado superior ($288\text{ kHz}$), las modula individualmente en portadoras de $30\text{ kHz}$, $60\text{ kHz}$ y $90\text{ kHz}$, y las combina en una única señal canalizada $m(t)$. En el bloque demodulador, mediante etapas de filtrado, se recuperan las señales originales de audio para su reproducción a $48\text{ kHz}$. Durante todo este procedimiento se generan graficas las cuales permiten trazar y hacer un análisis correspondiente al comportamiento de las señales.
 
 ## Paso a Paso del Procesamiento
 
@@ -34,7 +34,15 @@ El sistema toma 3 señales de audio monofónicas independientes muestreadas a $4
    - Submuestreo de regreso a la frecuencia original de 48 kHz.
    - Verificación de respuesta en frecuencia y prueba auditiva sin interferencia entre canales.
 
-## Logros y Resultados Clave Conseguidos
+## Resultados Conseguidos
+
+El script fue ejecutado utilizando 3 canciones de música correspondientes a géneros diversos, y con la manipulación adecuada en el dominio de la frecuencia, tomando como ejemplo el primer canal, se obtuvieron las siguientes graficas: 
+
+![Etapa de modulación](docs/images/Estructura_Moduladores.png)
+
+Tras evidenciar todo el procesamiento en el bloque modulador para la primera portadora. 
+
+## Logros
 
 - **Ahorro del 50% de Ancho de Banda (SSB):** Transmisión simultánea de 3 pistas de audio de 24 kHz de ancho de banda en un canal compartido de solo 30 kHz a 114 kHz.
 - **Cero Diafonía (Zero Cross-Talk):** Aislamiento espectral perfecto con bandas de guarda de 6 kHz entre canales adyacentes.
