@@ -42,11 +42,15 @@ El sistema toma 3 señales de audio independientes muestreadas a $48\text{ kHz}$
 
 ### Sistema Multicanal con 3 Moduladores.
 
-![Sistema de modulación multicanal](docs/images/Estructura_Moduladores.png)
+<p align="center">
+  <img src="docs/images/Estructura_Moduladores.png" alt="Sistema de modulación multicanal" width="500">
+</p>
 
 ### Demodulación 
 
-![Etapa de Demodulación](docs/images/Estructura_Demodulador.png)
+<p align="center">
+  <img src="docs/images/Estructura_Demodulador.png" alt="Etapa de Demodulación" width="500">
+</p>
 
 ## Resultados Conseguidos
 
