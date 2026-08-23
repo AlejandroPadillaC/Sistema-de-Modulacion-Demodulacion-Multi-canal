@@ -37,6 +37,18 @@ El sistema toma 3 señales de audio independientes muestreadas a $48\text{ kHz}$
 ## Estructura del Sistema, Moduladores, Demoduladores
 
 ### Bloque Modulador: 
+**Procesamiento de señal de entrada**
+- La señal de entrada toma dos caminos simultaneos. Por la rama superior se multiplica
+por 2 cos(ω1t); homólogamente, en la rama inferior se multiplica por 2 sin(ω1t).
+
+- En cada rama, tras las multiplicaciones previas, las señales pasan por filtros pasabajos
+ideales con frecuencia de corte ω1, eliminando las réplicas espectrales generadas por la
+multiplicación que se encuentren fuera de la banda de paso.
+
+- Cada rama filtrada se vuelve a multiplicar, esta vez por cos(ω2t) y sin(ω2t), respectiva-
+mente.
+
+- Finalmente, las dos ramas se suman para producir mx(t).
 
 <p align="center">
   <img src="docs/images/Estructura_Interna_Modulador.png" alt="Sistema de modulación multicanal" width="750">
