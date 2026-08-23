@@ -38,25 +38,43 @@ El sistema toma 3 señales de audio independientes muestreadas a $48\text{ kHz}$
 
 ### Bloque Modulador: 
 
-
+<p align="center">
+  <img src="docs/images/Estructura_Interna_Modulador.png" alt="Sistema de modulación multicanal" width="750">
+</p>
 
 ### Sistema Multicanal con 3 Moduladores.
 
 <p align="center">
-  <img src="docs/images/Estructura_Moduladores.png" alt="Sistema de modulación multicanal" width="500">
+  <img src="docs/images/Estructura_Moduladores.png" alt="Sistema de modulación multicanal" width="750">
 </p>
 
 ### Demodulación 
 
 <p align="center">
-  <img src="docs/images/Estructura_Demodulador.png" alt="Etapa de Demodulación" width="500">
+  <img src="docs/images/Estructura_Demodulador.png" alt="Etapa de Demodulación" width="750">
 </p>
 
 ## Resultados Conseguidos
 
 El script fue ejecutado utilizando 3 canciones de música correspondientes a géneros diversos, y con la manipulación adecuada en el dominio de la frecuencia, tomando como ejemplo el primer canal, se obtuvieron las siguientes graficas: 
 
+### Procesamiento de señal en bloque demulador
 
+<p align="center">
+  <img src="docs/images/Salida_Procedimiento_Modulador_30KHz.png" alt="Etapa de Demodulación" width="750">
+</p>
+
+### Espectro Multicanal Obtenido 
+
+<p align="center">
+  <img src="docs/images/Salida_Sistema_Modulacion_3_Canales.png" alt="Etapa de Demodulación" width="750">
+</p>
+
+### Proceso de Recuperación Señales Bloque Demodulador
+
+<p align="center">
+  <img src="docs/images/Salida_Procedimiento_Demodulador_Canal1.png" alt="Etapa de Demodulación" width="750">
+</p>
 
 Tras evidenciar todo el procesamiento en el bloque modulador para la primera portadora. 
 
@@ -68,6 +86,6 @@ Tras evidenciar todo el procesamiento en el bloque modulador para la primera por
 - **Filtrado Perfecto en Frecuencia:** Implementación de filtros rectangulares ideales mediante FFT/IFFT con cero distorsión de fase.
 - **Reconstrucción Exacta:** Fidelidad auditiva del 100% en las señales demoduladas tras el submuestreo de retorno a 48 kHz (verificado vía `sound()`).
 
----
+## Forma Implementar el Script
 
 
