@@ -34,11 +34,25 @@ El sistema toma 3 señales de audio independientes muestreadas a $48\text{ kHz}$
    - Submuestreo de regreso a la frecuencia original de 48 kHz.
    - Verificación de respuesta en frecuencia y prueba auditiva sin interferencia entre canales.
 
+## Estructura del Sistema, Moduladores, Demoduladores
+
+### Bloque Modulador: 
+
+
+
+### Sistema Multicanal con 3 Moduladores.
+
+![Etapa de modulación](docs/images/Estructura_Moduladores.png)
+
+### Demodulación 
+
+![Etapa de modulación](docs/images/Estructura_Demoduladores.png)
+
 ## Resultados Conseguidos
 
 El script fue ejecutado utilizando 3 canciones de música correspondientes a géneros diversos, y con la manipulación adecuada en el dominio de la frecuencia, tomando como ejemplo el primer canal, se obtuvieron las siguientes graficas: 
 
-![Etapa de modulación](docs/images/Estructura_Moduladores.png)
+
 
 Tras evidenciar todo el procesamiento en el bloque modulador para la primera portadora. 
 
@@ -52,4 +66,4 @@ Tras evidenciar todo el procesamiento en el bloque modulador para la primera por
 
 ---
 
-![Etapa de modulación](docs/images/Estructura_Moduladores.png)
+
