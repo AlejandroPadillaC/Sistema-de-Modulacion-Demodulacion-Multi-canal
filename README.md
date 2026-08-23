@@ -61,7 +61,21 @@ mente.
 </p>
 
 ### Demodulación 
+**Recuperación individual señales originales**
 
+1. Aislamiento del canal: La señal compuesta m(t) ingresa al bloque y pasa por un filtro
+selector ideal Hbp(f) (pasabajos, pasabanda o pasaaltos, según la ubicación espectral
+del canal). Este filtro aísla la banda lateral  ́unica de interés centrada en ωM +W2, con
+un ancho de banda W igual al definido en la etapa de modulación, eliminando por
+completo las componentes de los canales adyacentes.
+
+2. Mezcla demoduladora (Traslación a Banda Base): La señal aislada se multiplica por un oscilador local configurado como 2cos ωM +W2t. En el dominio de la
+frecuencia, esta operación representa un desplazamiento del espectro de la señal hacia altas frecuencias y, simultáneamente, genera una réplica
+exacta de la señal original centrada perfectamente en banda base (0 Hz).
+
+4. Filtrado pasabajos final: La seal mezclada atraviesa un filtro pasabajos ideal. Este componente se encarga de eliminar las réplicas de
+alta frecuencia generadas por la mezcla, entregando como resultado final la señal de
+audio recuperada de alta frecuencia si(t).
 <p align="center">
   <img src="docs/images/Estructura_Demodulador.png" alt="Etapa de Demodulación" width="750">
 </p>
