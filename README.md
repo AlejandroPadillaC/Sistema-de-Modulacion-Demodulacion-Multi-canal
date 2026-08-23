@@ -46,7 +46,7 @@ El sistema toma 3 señales de audio independientes muestreadas a $48\text{ kHz}$
 
 ### Demodulación 
 
-![Etapa de Demodulación](docs/images/Estructura_Demoduladores.png)
+![Etapa de Demodulación](docs/images/Estructura_Demoduladore.png)
 
 ## Resultados Conseguidos
 
