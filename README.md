@@ -1,4 +1,4 @@
-# 📻 Sistema de Modulación y Demodulación FDM en MATLAB - Análisis de Fourier
+# Sistema de Modulación y Demodulación FDM en MATLAB - Implementación Transformada Fourier
 
 ![MATLAB](https://img.shields.io/badge/MATLAB-R2023b%2B-blue?style=for-the-badge&logo=mathworks)
 ![Signal Processing](https://img.shields.io/badge/Area-Procesamiento_de_Señales-green?style=for-the-badge)
